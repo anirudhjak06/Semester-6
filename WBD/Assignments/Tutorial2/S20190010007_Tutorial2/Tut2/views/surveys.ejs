@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WBD Tutorial-2</title>
+</head>
+
+<style>
+    #f1 {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    #f1 td, #f1 th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    
+    #f1 tr:nth-child(even){background-color: #f2f2f2;}
+    
+    #f1 tr:hover {background-color: #ddd;}
+    
+    #f1 th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #04AA6D;
+      color: white;
+    }
+    </style>
+
+<body>
+    <%- include('navbar'); %>
+    <h1>Display Form Details</h1>
+    <table id="f1">
+        <thead>
+            <tr>
+                <th>Group No</th>
+                <th>Topic</th>
+                <th>Member1 Name</th>
+                <th>Member1 Rollno</th>
+                <th>Member2 Name</th>
+                <th>Member2 Rollno</th>
+                <th>Member3 Name</th>
+                <th>Member3 Rollno</th>
+                <th>Member4 Name</th>
+                <th>Member4 Rollno</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% surveys.forEach(function(survey) { %>
+            <tr>
+                <th><%= survey.group %></th>
+                <th><%= survey.topic %></th>
+                <% survey.members.forEach(function(member) { %>
+                <th><%= member.name %></th>
+                <th><%= member.roll %></th>
+                <% }) %>
+            </tr>
+            <% }) %>    
+        </tbody>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+[
+  {
+    "id": "1",
+    "timestamp": "Mon, 13 Dec 2021 05:08:31 GMT",
+    "name": "Alan Musk",
+    "gender": "M",
+    "age": 30,
+    "educationProfile": "PhD",
+    "address": "Bhopal",
+    "alliances": "good",
+    "allices": "not good",
+    "securityconcerns": "yes",
+    "overall": "Very good"
+  }
+]

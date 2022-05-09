@@ -1,0 +1,46 @@
+[
+    {
+        "group": 30,
+        "topic": "Green Grocery",
+        "members": [
+            {
+                "name": "Anirudh Jakhotia",
+                "roll": "S2019001007"
+            },
+            {
+                "name": "Neeraj Dusa",
+                "roll": "S20190010047"
+            },
+            {
+                "name": "Jayanth Kanduri Sri Ram",
+                "roll": "S20190010084"
+            },
+            {
+                "name": "Rakesh Ganeshula",
+                "roll": "S20190010052"
+            }
+        ]
+    },
+    {
+        "group": 15,
+        "topic": "Book Space",
+        "members": [
+            {
+                "name": "Harish Mullagura",
+                "roll": "S20190010023"
+            },
+            {
+                "name": "Anirudh Jakhotia",
+                "roll": "S20190010007"
+            },
+            {
+                "name": "Nikhil Ram",
+                "roll": "S20190010023"
+            },
+            {
+                "name": "Sampath Kumar",
+                "roll": "S20190010078"
+            }
+        ]
+    }
+]

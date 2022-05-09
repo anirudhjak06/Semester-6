@@ -1,0 +1,14 @@
+Install required modules
+
+npm i express ejs
+npm i path http body-parser fs
+npm i morgan rotating-file-stream nodemon
+
+Run the application
+
+nodemon server.js OR node server.js
+
+http://localhost:3000 - Home Page
+/ - form
+/groups - Display groups 
+/images/tut2.png - display static image 

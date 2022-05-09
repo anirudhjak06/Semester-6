@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FSD 2</title>
+    </head>
+    <style>
+        input[type=text], select {
+          width: 50%;
+          height:50%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+        input[type=email], select {
+          width: 50%;
+          height:50%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+        
+        input[type=submit] {
+          width: 50%;
+          height:50%;
+          background-color: #4CAF50;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+          background-color: #45a049;
+        }
+        
+        div {
+          border-radius: 5px;
+          background-color: #f2f2f2;
+          padding: 20px;
+        }
+        </style>
+    <body>
+        <%- include('navbar'); %>
+        <h2> Contact Us</h2>
+        <div class="about-section">
+            <h3>Name: <b>Anirudh Jakhotia</b></h3>
+            <h3>Roll-No: <b>S20190010007</b></h3>
+            <h3>Email: <b>anirudh.j19@iiits.in</b></h3>
+        </div>
+        <div id="wpcf7-f156-p143-o1 formwrap">
+            <form action="/"  class="wpcf7-form" >
+                <div style="display: none;">
+                    <input type="hidden" name="_wpcf7" value="156">
+                    <input type="hidden" name="_wpcf7_version" value="3.7.2">
+                    <input type="hidden" name="_wpcf7_locale" value="en_US">
+                    <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f156-p143-o1">
+                    <input type="hidden" name="_wpnonce" value="d1da331d93">
+                </div>
+                <p>
+                   <span>
+                     <input type="text" name="Name" value="" size="40"  aria-required="true" aria-invalid="false" placeholder="Name">
+                  </span><br>
+                  <span>
+                    <input type="email" name="Email"  size="40"  aria-required="true" aria-invalid="false" placeholder="Email">
+                  </span><br>
+                  <span>
+                    <textarea name="Message" cols="97" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Message"></textarea>
+                  </span><br>
+                  <input type="submit" value="Send" style="background-color: #008CBA;">
+                  <img class="ajax-loader" src="http://www.jordancundiff.com/wp-content/plugins/contact-form-7/images/ajax-loader.gif" alt="Sending ..." style="visibility: hidden;">
+              </p>
+          </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WBD Tutorial-2</title>
+    <style>
+        input[type=text], select {
+          width: 30%;
+          height:50%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+
+        input[type=number], select {
+          width: 30%;
+          height:50%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+        
+        input[type=submit] {
+          width: 30%;
+          height:50%;
+          background-color: #4CAF50;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+          background-color: #45a049;
+        }
+        
+        div {
+          border-radius: 5px;
+          background-color: #f2f2f2;
+          padding: 20px;
+        }
+        </style>
+</head>
+<body>
+    <%- include('navbar'); %>
+    <h1>WBD Tutorial</h1>
+    <img src="/images/tut2.png" width="500px" height="250px" />
+    <h2>WBD Group Details</h2>
+    <br>
+    <form action="/" method="POST">
+        <label for="group">Group No</label><br>
+        <input type="number" name="group" required="required" pattern="[0-9]+">
+        <br><br>
+        <label for="topic">Topic:</label><br>
+        <input type="text" name="topic" required="required" >
+        <br><br>
+        <h3>Group Members</h3>
+        <h4>Member-1</h4>
+        <label for="name">Name:</label><br>
+        <input type="text" name="member1" required="required" >
+        <br><br>
+        <label for="rollno1">Roll no:</label><br>
+        <input type="text" name="roll1" required="required" pattern="S[0-9]{11}">
+        <br><br>
+        <h4>Member-2</h4>
+        <label for="name">Name:</label><br>
+        <input type="text" name="member2" required="required" >
+        <br><br>
+        <label for="rollno2">Roll no:</label><br>
+        <input type="text" name="roll2" required="required" pattern="S[0-9]{11}">
+        <br><br>
+        <h4>Member-3</h4>
+        <label for="name">Name:</label><br>
+        <input type="text" name="member3" required="required" >
+        <br><br>
+        <label for="rollno3">Roll no:</label><br>
+        <input type="text" name="roll3" required="required" pattern="S[0-9]{11}">
+        <br><br>
+        <h4>Member-4</h4>
+        <label for="name">Name:</label><br>
+        <input type="text" name="member4" required="required" >
+        <br><br>
+        <label for="rollno1">Roll no:</label><br>
+        <input type="text" name="roll4" required="required" pattern="S[0-9]{11}">
+        <br><br><br><br>
+        <div class="row">
+            <input type="submit" value="Submit">
+          </div>
+        <!-- <button type="submit">Submit</button> -->
+    </form>
+</body>
+</html>

@@ -1,0 +1,20 @@
+WBD ASSIGNMENT - 2
+
+--------------
+Instructions:
+--------------
+
+How to run the code:
+
+1. The code contains the package.json with the required dependencies need to get started with running the assignment.
+2. Please follow the below commands to run the server without any errors smoothly.
+ 
+1) yarn intsall / npm install
+
+2) yarn start / node server.js
+
+Then, Hit the URL http://localhost:5000/ to open the server in the browser.
+Once server started, fill the form and upload the images using multer middleware.
+The access log file is generated using morgan middleware.
+Now, you can check the uploaded images in the images folder and also in the mongoDB collection.
+
